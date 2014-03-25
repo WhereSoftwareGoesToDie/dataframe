@@ -1,0 +1,18 @@
+// This protobuf is for requests to readerd.
+package dataframe;
+
+// Returned as a response to the chevalier client.
+message DataSourceBurst {
+        repeated DataSource sources = 1;
+        optional string error = 2;
+}
+
+message DataSource {
+        message Tag {
+                required string field = 1;
+                required string value = 2;
+        }
+        repeated Tag     source = 1;
+}
+
+// vim: set expandtab tabstop=8:
