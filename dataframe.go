@@ -6,3 +6,7 @@ DataFrames.
 [0] https://github.com/anchor/vaultaire
 */
 package dataframe
+
+const (
+	Version = "1.0.0"
+)
